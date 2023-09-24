@@ -29,6 +29,21 @@ https://hacktoberfest.com/
 
 1. Go to index.html
 2. Copy paste the music-item template code to modify it.
+
+'''
+
+        <!-- Copy and paste the following template for each music item -->
+        <!--Card 1-->
+        <div class="music-item">
+            <div class="des">
+                <!-- insert the embed code here -->
+
+                <p>Suggested by your-name</p>
+            </div>
+        </div>
+
+'''
+
 3. Choose a song in Spotify > go to share > select embed track > choose any color > click copy.
 4. Paste the embed code of your song.
 4. Write your name in the code after "Suggested by ".
