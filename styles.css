@@ -1,0 +1,74 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light mode styles */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+/* Music list styles */
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.music-item {
+    background-color: #f68a31;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .music-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the width for smaller screens */
+    }
+}
+
+
+/* Styles for the toggle container */
+.toggle-container {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    cursor: pointer;
+}
+
+/* Styles for the toggle label */
+.toggle-label {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%; /* Make it a circle */
+}
+
+/* Styles for the icon */
+.toggle-label i {
+    font-size: 24px; /* Adjust the icon size as needed */
+}
