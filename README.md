@@ -27,27 +27,43 @@ https://hacktoberfest.com/
 
 ⭐ Follow these steps to add your song to the webpage:
 
-1. Go to index.html
-2. Copy paste the music-item template code to modify it.
+1. **Navigate to the JSON File**:
+   - Go to `musicData.json` in your project directory.
 
-'''
+2. **Use the Template**:
+   - Copy the provided JSON template structure to use it for your song addition.
 
-        <!-- Copy and paste the following template for each music item -->
-        <!--Card 1-->
-        <div class="music-item">
-            <div class="des">
-                <!-- insert the embed code here -->
+    ```json
+    {
+        "id": "PREVIOUS_ID + 1"
+        "src": "PASTE_YOUR_SPOTIFY_EMBED_LINK_HERE",
+        "suggestedBy": "your-name"
+    }
+    ```
 
-                <p>Suggested by your-name</p>
-            </div>
-        </div>
+3. **Get the Link from Spotify**:
+   - Choose your favorite song in Spotify.
+   - Navigate to the share options of the song.
+   - Select 'Copy Song Link' from the available options.
 
-'''
+4. **Transform the Link**:
+   - Convert the copied Spotify song link from the format:
+     `https://open.spotify.com/track/SONG_ID_HERE`
+     to the embed format:
+     `https://open.spotify.com/embed/track/SONG_ID_HERE?utm_source=generator&theme=0`
 
-3. Choose a song in Spotify > go to share > select embed track > choose any color > click copy.
-4. Paste the embed code of your song.
-4. Write your name in the code after "Suggested by ".
-5. You are done go aheaed and make your pull request.
+5. **Paste Your Song's Embed Link**:
+   - Go back to the `musicData.json`.
+   - Replace `PASTE_YOUR_SPOTIFY_EMBED_LINK_HERE` in the JSON template with the transformed embed link.
+
+6. **Add Your Name**:
+   - In the placeholder `your-name` within the "suggestedBy" field, replace `your-name` with your actual name.
+
+7. **Final Steps**:
+   - Once you have made all the necessary changes, save the `musicData.json` file.
+   - Proceed to create a pull request for the changes you made. If you are collaborating on a platform like GitHub, make sure to provide a meaningful commit message and pull request description for others to understand your changes. 
+
+Your song will be added to the list once the pull request is reviewed and merged! 🎵
 
 ⭐ Don't make any other changes in the code! If you find any bug or have a feature suggestion, feel free to raise an issue.
 
