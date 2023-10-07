@@ -28,15 +28,14 @@ https://hacktoberfest.com/
 ⭐ Follow these steps to add your song to the webpage:
 
 1. **Navigate to the JSON File**:
-   - Go to `musicData.json` in your project directory.
+   - Open the `musicData.json` in your project directory.
 
 2. **Use the Template**:
    - Copy the provided JSON template structure to use it for your song addition.
 
     ```json
     {
-        "id": "PREVIOUS_ID + 1"
-        "src": "PASTE_YOUR_SPOTIFY_EMBED_LINK_HERE",
+        "src": "PASTE_YOUR_SPOTIFY_LINK_HERE",
         "suggestedBy": "your-name"
     }
     ```
@@ -46,22 +45,16 @@ https://hacktoberfest.com/
    - Navigate to the share options of the song.
    - Select 'Copy Song Link' from the available options.
 
-4. **Transform the Link**:
-   - Convert the copied Spotify song link from the format:
-     `https://open.spotify.com/track/SONG_ID_HERE`
-     to the embed format:
-     `https://open.spotify.com/embed/track/SONG_ID_HERE?utm_source=generator&theme=0`
+4. **Paste Your Song's Link**:
+   - Return to the `musicData.json`.
+   - Replace `PASTE_YOUR_SPOTIFY_LINK_HERE` in the JSON template with the copied song link.
 
-5. **Paste Your Song's Embed Link**:
-   - Go back to the `musicData.json`.
-   - Replace `PASTE_YOUR_SPOTIFY_EMBED_LINK_HERE` in the JSON template with the transformed embed link.
-
-6. **Add Your Name**:
+5. **Add Your Name**:
    - In the placeholder `your-name` within the "suggestedBy" field, replace `your-name` with your actual name.
 
-7. **Final Steps**:
+6. **Final Steps**:
    - Once you have made all the necessary changes, save the `musicData.json` file.
-   - Proceed to create a pull request for the changes you made. If you are collaborating on a platform like GitHub, make sure to provide a meaningful commit message and pull request description for others to understand your changes. 
+   - Proceed to create a pull request for the changes you made. If you're collaborating on a platform like GitHub, ensure to provide a meaningful commit message and pull request description for others to understand your additions.
 
 Your song will be added to the list once the pull request is reviewed and merged! 🎵
 
