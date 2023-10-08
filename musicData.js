@@ -24,9 +24,9 @@ async function renderMusicCards(data) {
 
     const iframe = document.createElement("iframe");
     Object.assign(iframe.style, {
-      borderRadius: "12px",
-      width: "100%",
-      height: "352px",
+      borderRadius: "10px",
+      width: "300px",
+      height: "400px",
     });
     Object.assign(iframe, {
       src: item.src,
@@ -38,10 +38,11 @@ async function renderMusicCards(data) {
     });
 
     const p = document.createElement("p");
+    p.classList.add("p");
     p.textContent = "Suggested by " + item.suggestedBy;
 
     des.appendChild(iframe);
-    des.appendChild(p);
+    musicItem.appendChild(p);
     musicItem.appendChild(des);
     musicContainer.appendChild(musicItem);
   }
