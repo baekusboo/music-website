@@ -23,10 +23,50 @@ header {
     text-align: center;
 }
 
-h1 {
+/*h1 {
     font-size: 36px;
     margin: 0;
+    
+}*/
+h1 {
+    font-family: "Abril Fatface", sans-serif;
+    background: linear-gradient(to right, crimson, pink, springgreen);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #000000;
+    font-size: 5rem;
+    width: 80vw;
+    margin: 2vh auto;
+    display: block;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 900;
 }
+
+h1:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+
+
+
+
+
 /* Music list styles */
 .music-grid {
     display: grid;
