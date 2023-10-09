@@ -6,13 +6,13 @@ body {
 }
 
 /* Light mode styles */
-.light-mode {
+/*.light-mode {
     background-color: #fff;
     color: #333;
 }
 
 /* Dark mode styles */
-.dark-mode {
+/*.dark-mode {
     background-color: #222;
     color: #fff;
 }
@@ -23,10 +23,64 @@ header {
     text-align: center;
 }
 
-h1 {
+/*h1 {
     font-size: 36px;
     margin: 0;
+    
+}*/
+:root {
+    --text-color-light: rgba(0, 0, 0, 1); /* Default text color for light mode */
+    --text-color-dark: rgba(255, 255, 255, 1); /* Default text color for dark mode */
 }
+
+body {
+    /* Set the default background color for both modes */
+    background-color: #fff;
+    color: var(--text-color-light); /* Set default text color for light mode */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body.dark-mode {
+    /* Add styles for dark mode */
+    background-color: #333;
+    color: var(--text-color-dark);
+}
+
+h1 {
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 5rem; /* Adjust the font size as needed */
+    width: 80vw;
+    margin: 10vh auto; /* Adjusted margin to 10vh */
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-image: linear-gradient(to right, crimson, pink, gold, orange, springgreen, blue); /* Added more colors */
+    background-size: 400% 100%; /* Adjusted background-size for more colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 40s linear infinite; /* Longer duration for smoother flow */
+}
+
+h1:hover {
+    color: transparent;
+}
+
+body.dark-mode h1 {
+    background-image: linear-gradient(to right, gold, orange, crimson, violet, indigo, blue); /* Added more colors */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
 /* Music list styles */
 .music-grid {
     display: grid;
