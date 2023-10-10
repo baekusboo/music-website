@@ -40,6 +40,15 @@ async function renderMusicCards(data) {
     const p = document.createElement("p");
     p.textContent = "Suggested by " + item.suggestedBy;
     p.style.margin = "10px";
+    p.style.backgroundImage="linear-gradient(to right, crimson, pink, gold, orange, springgreen, blue)";
+    p.style.webkitBackgroundClip="text";
+    p.style.webkitTextFillColor="transparent";
+    p.style.webkitAnimation="hue 40s infinite linear";
+
+
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -webkit-animation: hue 60s infinite linear;
 
     des.appendChild(iframe);
     des.appendChild(p);
