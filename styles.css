@@ -86,7 +86,7 @@ body.dark-mode h1 {
 /* Music list styles */
 .music-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 80px;
     margin:10px 90px;
     padding: 0;
@@ -94,7 +94,7 @@ body.dark-mode h1 {
 }
 
 .music-item {
-    background-color: #efefef;
+    background-color: #282828;
     padding: 0px;
     border-radius: 15px;
     text-align: center;
@@ -107,6 +107,7 @@ body.dark-mode h1 {
 .music-item-dark-mode{
     color: black;
     box-shadow: 5px 5px 10px black;
+    background-color: rgb(225, 225, 225);
 }
 
 /* Media query for smaller screens */
