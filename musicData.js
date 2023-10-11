@@ -39,7 +39,10 @@ async function renderMusicCards(data) {
 
     const p = document.createElement("p");
     p.textContent = "Suggested by " + item.suggestedBy;
-
+    p.style.marginTop="0px";
+    p.style.marginBottom = "10px";
+    p.style.color="white";
+    p.style.padding="5px";
     des.appendChild(iframe);
     des.appendChild(p);
     musicItem.appendChild(des);

@@ -92,11 +92,76 @@ body.dark-mode h1 {
 }
 
 .music-item {
+        background-color: #f68a31; /* Orange background */
+        padding: 20px; /* Padding around content */
+        border-radius: 15px; /* Rounded corners */
+        text-align: center; /* Centered text */
+        height: auto; /* Adjust height based on content */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        transition: transform 0.2s ease-in-out; /* Smooth transition on hover */
+    }
+
+
+.music-item:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.music-item {
     background-color: #f68a31;
-    padding: 10px;
-    border-radius: 15px;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
     text-align: center;
-    height: auto;
+    margin-bottom: 15px;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.details {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.play-button {
+    text-align: center;
+}
+
+i.fas.fa-play {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i.fas.fa-play:hover {
+    background-color: #222;
 }
 
 /* Media query for smaller screens */
