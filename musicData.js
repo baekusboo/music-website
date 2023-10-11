@@ -42,10 +42,7 @@ async function renderMusicCards(data) {
     p.textContent = "Suggested by " + item.suggestedBy;
     p.style.marginTop="0px";
     p.style.marginBottom = "10px";
-    p.style.backgroundImage="linear-gradient(to right, crimson, pink, gold, orange, springgreen, blue)";
-    p.style.webkitBackgroundClip="text";
-    p.style.webkitTextFillColor="transparent";
-    p.style.webkitAnimation="gradient 10s linear infinite";
+    p.style.color="white";
     p.style.padding="5px";
 
     // -webkit-background-clip: text;

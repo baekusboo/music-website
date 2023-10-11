@@ -102,6 +102,7 @@ body.dark-mode h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     box-shadow: 5px 5px 10px #b0b0b0;
+    width: 270px;
 }
 
 .music-item-dark-mode{
