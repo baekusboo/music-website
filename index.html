@@ -11,8 +11,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="https://img.icons8.com/3d-fluency/94/music.png" type="image/png">
+    <link href="//s.w.org/wp-includes/css/dashicons.css?20150710" rel="stylesheet" type="text/css">
     <script src="theme.js" defer></script>
     <script src="musicData.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="light-mode">
@@ -22,6 +24,21 @@
 
     <div class="toggle-container">
         <label class="toggle-label" for="darkModeToggle"><i class="fas fa-moon"></i></label>
+    </div>
+
+    <div class="filter-container">
+        <div class="selectFilter">
+            <select name="filter" id="filter">
+                <option selected value="all">All</option>
+                <option value="latest">Latest</option>
+                <option value="favourites">Favourites</option>
+            </select>
+        </div>
+        <div class="searchFilter" id="searchFilter">
+            <!-- <label for="search"><i class="fas fa-search"></i></label> -->
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+            <input type="text" placeholder="Username" id="search">
+        </div>
     </div>
 
     <div class="music-grid">

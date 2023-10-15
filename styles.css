@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 /* Light mode styles */
 /*.light-mode {
     background-color: #fff;
@@ -50,7 +51,7 @@ h1 {
     font-family: "Abril Fatface", sans-serif;
     font-size: 5rem; /* Adjust the font size as needed */
     width: 80vw;
-    margin: 10vh auto; /* Adjusted margin to 10vh */
+    margin: 5vh auto; /* Adjusted margin to 10vh */
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -84,25 +85,39 @@ body.dark-mode h1 {
 /* Music list styles */
 .music-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
-    margin: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 80px;
+    margin:10px 90px;
     padding: 0;
     list-style: none;
 }
 
 .music-item {
-    background-color: #f68a31;
-    padding: 10px;
+    background-color: #282828;
+    padding: 0px;
     border-radius: 15px;
     text-align: center;
     height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #b0b0b0;
+    width: 270px;
+}
+
+.music-item-dark-mode{
+    color: black;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(225, 225, 225);
 }
 
 /* Media query for smaller screens */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 3rem; /* Adjust the font size as needed */
+    }
     .music-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the width for smaller screens */
+        margin:40px;
     }
 }
 
@@ -125,4 +140,109 @@ body.dark-mode h1 {
 /* Styles for the icon */
 .toggle-label i {
     font-size: 24px; /* Adjust the icon size as needed */
+}
+
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Like Button */
+.fav-btn {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes favme-anime {
+    0% {
+      opacity: 1;
+      font-size: 1rem;
+      -webkit-text-stroke-color: transparent;
+    }
+    25% {
+      opacity: 0.6;
+      color: #FFF;
+      font-size: 0.8rem;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #DC3232;
+    }
+    75% {
+      opacity: 0.6;
+      color: #FFF;
+      font-size: 1.42875rem;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #DC3232;
+    }
+    100% {
+      opacity: 1;
+      font-size: 1.25rem;
+      -webkit-text-stroke-color: transparent;
+    }
+  }
+  @keyframes favme-hover {
+    from {
+      font-size: 1.42875rem;
+    }
+    80% {
+      font-size: 1.25rem;
+    }
+  }
+  .favme {
+    display: block;
+    font-size: 3rem;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.2s ease;
+    color: #CBCDCE;
+    margin: 0;
+  }
+  .favme.active {
+    color: #DC3232;
+  }
+  .favme:hover {
+    animation: favme-hover 0.3s infinite alternate;
+  }
+  .favme.is_animating {
+    animation: favme-anime 0.3s;
+  }
+
+  /* Filter */
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 3rem;
+}
+.selectFilter {
+    width: 30%;
+}
+.selectFilter select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchFilter {
+    width: 65%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.searchFilter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
 }
