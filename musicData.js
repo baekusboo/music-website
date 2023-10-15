@@ -66,7 +66,7 @@ async function renderMusicCards(data) {
       borderRadius: "12px",
       width: "100%",
       height: "352px",
-      color:"black",
+      color: "black",
     });
     Object.assign(iframe, {
       src: item.src,
@@ -82,10 +82,10 @@ async function renderMusicCards(data) {
 
     const p = document.createElement("p");
     p.textContent = "Suggested by " + item.suggestedBy;
-    p.style.marginTop="0px";
+    p.style.marginTop = "0px";
     p.style.marginBottom = "10px";
-    p.style.color="white";
-    p.style.padding="5px";
+    p.style.color = "white";
+    p.style.padding = "5px";
 
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
