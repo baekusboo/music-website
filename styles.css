@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
@@ -50,7 +52,7 @@ h1 {
     font-family: "Abril Fatface", sans-serif;
     font-size: 5rem; /* Adjust the font size as needed */
     width: 80vw;
-    margin: 10vh auto; /* Adjusted margin to 10vh */
+    margin: 5vh auto; /* Adjusted margin to 10vh */
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -84,25 +86,36 @@ body.dark-mode h1 {
 /* Music list styles */
 .music-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
-    margin: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 80px;
+    margin:10px 90px;
     padding: 0;
     list-style: none;
 }
 
 .music-item {
-    background-color: #f68a31;
-    padding: 10px;
+    background-color: #282828;
+    padding: 0px;
     border-radius: 15px;
     text-align: center;
     height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #b0b0b0;
+    width: 270px;
+}
+
+.music-item-dark-mode{
+    color: black;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(225, 225, 225);
 }
 
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .music-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the width for smaller screens */
+        margin:40px;
     }
 }
 
