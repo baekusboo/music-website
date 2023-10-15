@@ -185,12 +185,12 @@
     "suggestedBy": "Roshini"
   },
   {
-    "id":41,
+    "id": 41,
     "src":"https://open.spotify.com/track/3yfqSUWxFvZELEM4PmlwIR?si=0e31895512a04ebe",
     "suggestedBy": "Arun Karthick"
   },
   {
-    "id":42,
+    "id": 42,
     "src": "https://open.spotify.com/track/59hBR0BCtJsfIbV9VzCVAp?si=0c4f194edbfb47d7 ",
     "suggestedBy": "Akash"
   },
@@ -313,6 +313,11 @@
     "id": 75,
     "src": "https://open.spotify.com/track/4mOmWSdTmf6fSAibGWCKp7?si=93d69299520b42ac", 
     "suggestedBy": "jerome"
+  },
+  {
+    "id": 82,
+    "src": "https://open.spotify.com/track/0T5iIrXA4p5GsubkhuBIKV?si=73DIlnFmQJGNUpNTdFTz6g&utm_source=copy-link",
+    "suggestedBy": "Adithya"
   }
 
 ]
