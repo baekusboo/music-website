@@ -120,22 +120,22 @@
     "suggestedBy": "Sharanya Chakraborty"
   },
   {
-    "id":25,
+    "id": 25,
     "src": "https://open.spotify.com/track/3DgcF9ItisEssUDPpLwxlD?si=8935d8d6d3a34a5f",
     "suggestedBy": "Ravi Kumar Gupta"
   },
   {
-    "id":26,
-    "src":"https://open.spotify.com/track/2CSRrnOEELmhpq8iaAi9cd?si=66e974a78d2c4eab",
+    "id": 26,
+    "src": "https://open.spotify.com/track/2CSRrnOEELmhpq8iaAi9cd?si=66e974a78d2c4eab",
     "suggestedBy": "GeovannaBorges"
   },
   {
-    "id":27,
+    "id": 27,
     "src": "https://open.spotify.com/track/3MkdA6vwF0ifRl86yzTlJW?si=05e9486cc00b4d6b",
-    "suggestedBy":"GeovannaBorges"
+    "suggestedBy": "GeovannaBorges"
   },
   {
-    "id":28,
+    "id": 28,
     "src": "https://open.spotify.com/track/4SuZuaC4BEKZpodo1r5dBT?si=51cfe650d7de4325",
     "suggestedBy": "GeovannaBorges"
   },
@@ -185,8 +185,199 @@
     "suggestedBy": "Roshini"
   },
   {
+    "id": 41,
+    "src":"https://open.spotify.com/track/3yfqSUWxFvZELEM4PmlwIR?si=0e31895512a04ebe",
+    "suggestedBy": "Arun Karthick"
+  },
+  {
+    "id": 42,
+    "src": "https://open.spotify.com/track/59hBR0BCtJsfIbV9VzCVAp?si=0c4f194edbfb47d7 ",
+    "suggestedBy": "Akash"
+  },
+  {
+    "id": 44,
+    "src": "https://open.spotify.com/track/3oDkdAySo1VQQG0ptV7uwa?si=e93a14cb6c004c8a",
+    "suggestedBy": "Arun"
+  },
+  {
+    "id": 45,
+    "src": "https://open.spotify.com/track/4EkYBqzQCGDVNoL3NU4WZo?si=916f9cd796b5447a",
+    "suggestedBy": "draviddevota"
+  },
+  {
+    "id": 46,
+    "src": "https://open.spotify.com/track/38uokF7r2knE7SH6vf6DqT?si=6144af1ea6784423",
+    "suggestedBy": "Adhi"
+  },
+  {
+    "id": 47,
+    "src": "https://open.spotify.com/track/2VGs7EmaIxq96Wcog6DQOc?si=e8af2af5d0da4350",
+    "suggestedBy": "pugazh"
+  },
+  {
+    "id": 48,
+    "src": "https://open.spotify.com/track/5NgZHzNxpCqxcEFXtBFW9S?si=38558f19d20043eb",
+    "suggestedBy": "Nithish"
+  },
+  {
+    "id": 49,
+    "src": "https://open.spotify.com/track/4Hv055xg1SZZgwwGBx8Cr5",
+    "suggestedBy": "swastika"
+  },
+  {
+    "id": 50,
+    "src": "https://open.spotify.com/track/6Ro16W3cg8dg7um9aRLWAj",
+    "suggestedBy": "Aarthi7006"
+  },
+  {
+    "id": 51,
+    "src":"https://open.spotify.com/track/7nHQjVpEncX7NEdA2G6kU1?si=cZpSrlKyQyGz31p5TNDFmQ0&nd=1+",
+    "suggestedBy": "subasri"
+  },
+  {
+    "id": 52,
+    "src": "https://open.spotify.com/track/5DgY6Ab0vpyUMKnY9ubFOF?si=ee35ad20fc094184",
+    "suggestedBy": "Abinaya"
+  },
+  {
+    "id": 53,
+    "src": "https://open.spotify.com/track/4vlMdXsRpAIXYggwbNHZSv?si=7fbd82bd348d44db",
+    "suggestedBy": "Abarna"
+  },
+  {
+    "id": 54,
+    "src": "https://open.spotify.com/track/1AzNN19lPYC68iacrbWL8X?si=7f760859c02d4067",
+    "suggestedBy": "dharshini"
+  },
+  {
+    "id": 55,
+    "src": "https://open.spotify.com/track/2PPePHWO61XleK1jG6n767?si=200b078d5d264419",
+    "suggestedBy": "Shruthi"
+  },
+  {
+    "id": 56,
+    "src": "https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K?si=7fe2103dd6f44863",
+    "suggestedBy": "Shifana"
+  },
+  {
+    "id": 57,
+    "src": "https://open.spotify.com/track/16jOVIIrpo7XV8KOnx4ZwX",
+    "suggestedBy": "Sandhiya"
+  },
+  {
+    "id": 58,
+    "src": "https://open.spotify.com/track/5Y7Y315vZkOZbesJ22jXkK",
+    "suggestedBy": "Yuvasri"
+  },
+  {
+    "id": 59,
+    "src": "https://open.spotify.com/track/1DfpYz98hG74VoH8ROcvw2?si=254c6a7d25c04329",
+    "suggestedBy": "Karthick"
+  },
+  {
+    "id": 60,
+    "src": "https://open.spotify.com/track/3l198ZkmLWrHYL3WXTOoep?si=65bc1f889a7c465a",
+    "suggestedBy": "Jeevaraj"
+  },
+  {
+    "id": 61,
+    "src": "https://open.spotify.com/track/6iRxlGYx90YnrXZCur191p?si=8a81d661de0c49ef",
+    "suggestedBy": "Praveen raj"
+  },
+  {
+    "id": 62,
+    "src":"https://open.spotify.com/track/209pScL6fUhISxcLWkB6rf?si=5e6fc3e49e2443a9",
+    "suggestedBy": "Jeevanantham"
+  },
+  {
+    "id": 63,
+    "src": "https://open.spotify.com/track/7fGcPKzKiXAVL0mqesq4dT?si=4ec3e249e91e4b19",
+    "suggestedBy": "hariesh subramanian M"
+  },
+  {
+    "id": 64,
+    "src": "https://open.spotify.com/track/5Ir3dOzPQ9Q30dC45J6QzH?si=e825a50a27484a19",
+    "suggestedBy": "Sudharrshan"
+  },
+  {
+    "id": 65,
+    "src":"https://open.spotify.com/track/7lnRiEP7BHXuILXNY9MH8f?si=6dfe7f417aeb42d0",
+    "suggestedBy":"Sanjay"
+  },
+  {
+    "id": 66,
+    "src":" https://open.spotify.com/track/705o6seg8uSBkEPCi5RLcV?si=8834a5c436704b85",
+    "suggestedBy": "Thennu"
+  },
+  {
+    "id": 67,
+    "src": "https://open.spotify.com/track/0KCSJzsQVxkloxoT7dyrqV?si=Jl63bxjlTWuknHRiE1KfmA",
+    "suggestedBy": "Rajaram"
+  },
+  {
+    "id": 69,
+    "src": "https://open.spotify.com/track/0OXbRangbVBMejFX3EV6DN?si=953a2c419a2b493c",
+    "suggestedBy": "Geetha"
+  },
+  {
+    "id": 70 ,
+    "src": "https://open.spotify.com/track/7DhO4F2BVehfauE8xNCiGZ?si=cc6df511099e443f",
+    "suggestedBy": "Devipriya"
+  },
+  {
+    "id": 71,
+    "src": "https://open.spotify.com/track/0SmWo1iBkosyHSr7nZKDnD?si=120b452171854b15",
+    "suggestedBy": "Loki"
+  },
+  {
+    "id": 72,
+    "src": "https://open.spotify.com/track/15tihU7QrnhaBvE7hXGDwa?si=54eb76f9806245cf",
+    "suggestedBy": "KABI"
+  },
+  {
     "id": 74,
     "src": "https://open.spotify.com/track/2alc8VZAzDgdAsL2QMk3hu?si=42af28a3714f4449",
     "suggestedBy": "Kishore_02"
+  },
+  {
+    "id": 75,
+    "src": "https://open.spotify.com/track/4mOmWSdTmf6fSAibGWCKp7?si=93d69299520b42ac", 
+    "suggestedBy": "jerome"
+  },
+  {
+    "id": 77,
+    "src":"https://open.spotify.com/track/47qipCp5de04CHAfhcUNLu?si=7e68d28a68f5459b",
+    "suggestedBy": "appu"
+  },
+  {
+    "id": 78,
+    "src": "https://open.spotify.com/track/7uoFMmxln0GPXQ0AcCBXRq?si=77bb9d4759054321",
+    "suggestedBy": "aishwariya"
+  },
+  {
+    "id": 79,
+    "src": "https://open.spotify.com/track/5qW4C3GwfXjU6crJna4w1b?si=ab2fc9dd265e424d",
+    "suggestedBy": "hemnath"
+  },
+  {
+    "id": 81,
+    "src": "https://open.spotify.com/track/3hRV0jL3vUpRrcy398teAU?si=e3d2bea44fbf4676",
+    "suggestedBy": "Jayagovind K"
+  },
+  {
+    "id": 82,
+    "src": "https://open.spotify.com/track/0T5iIrXA4p5GsubkhuBIKV?si=73DIlnFmQJGNUpNTdFTz6g&utm_source=copy-link",
+    "suggestedBy": "Adithya"
+  },
+  {
+    "id": 83,
+    "src":"https://open.spotify.com/track/6v3KW9xbzN5yKLt9YKDYA2?si=4652bfda11854f80",
+    "suggestedBy": "Krithik"
+  },
+  {
+    "id": 88,
+    "src": "https://open.spotify.com/track/6gdhAfSwSyWOgF5dUIJDUk?si=652320e1723848a8",
+    "suggestedBy": "Gokul Nath"
   }
+
 ]
