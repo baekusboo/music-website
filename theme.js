@@ -1,17 +1,20 @@
-const themeIcon = document.querySelector('.toggle-label i');
+const themeIcon = document.querySelector(".toggle-label i");
 const body = document.body;
+const arrow = document.querySelector("#backToTopBtn");
 
-let musicitem=document.getElementsByClassName('music-item');
-console.log(musicitem)
+let musicitem = document.getElementsByClassName("music-item");
+console.log(musicitem);
 let isDarkMode = false;
 
-themeIcon.addEventListener('click', () => {
-    isDarkMode = !isDarkMode;
-    body.classList.toggle('dark-mode', isDarkMode);
-    for(let i=0;i<musicitem.length;i++){
-        musicitem[i].classList.toggle('music-item-dark-mode',isDarkMode);
-    }
-    musicitem.classList.toggle('music-item-dark-mode', isDarkMode);
-    themeIcon.classList.toggle('fa-moon', !isDarkMode);
-    themeIcon.classList.toggle('fa-sun', isDarkMode);
+themeIcon.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
+  body.classList.toggle("dark-mode", isDarkMode);
+  for (let i = 0; i < musicitem.length; i++) {
+    musicitem[i].classList.toggle("music-item-dark-mode", isDarkMode);
+  }
+  musicitem.classList.toggle("music-item-dark-mode", isDarkMode);
+  themeIcon.classList.toggle("fa-moon", !isDarkMode);
+  themeIcon.classList.toggle("fa-sun", isDarkMode);
+  arrow.classList.toggle("light-mode", !isDarkMode);
+  arrow.classList.toggle("dark-mode", isDarkMode);
 });
