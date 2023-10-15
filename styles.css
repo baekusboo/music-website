@@ -143,6 +143,14 @@ body.dark-mode h1 {
     ); /* Adjust the width for smaller screens */
     margin: 40px;
   }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
 }
 
 /* Styles for the toggle container */
@@ -170,6 +178,8 @@ body.dark-mode h1 {
   transform: translateY(0px);
   transition: all 0.3s;
   font-size: 2rem;
+  margin: 5px 5px;
+  padding: 10px;
 }
 
 #backToTopBtn:hover {
