@@ -97,7 +97,9 @@ body.dark-mode h1 {
     border-radius: 15px;
     text-align: center;
     height: auto;
+  
 }
+
 
 /* Media query for smaller screens */
 @media (max-width: 480px) {
