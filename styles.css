@@ -72,3 +72,42 @@ h1 {
 .toggle-label i {
     font-size: 24px; /* Adjust the icon size as needed */
 }
+/* Styles for Footer */
+footer {
+    background-color: #f6a903;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
