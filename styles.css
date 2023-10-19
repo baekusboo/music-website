@@ -44,20 +44,25 @@ h1 {
     text-align: center;
     height: auto;
     display: flex;
-    justify-content: space-between; 
-   
+    justify-content: space-between; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
 }
+
+/* Contributor's name styles */
 .des p {
     margin: 0;
 }
+
+/* Like button styles */
 .des button {
     background-color: #007bff;
     color: white;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
-    margin-left: 10px; 
+    margin-left: 10px; /* Adjust margin as needed */
 }
+
 
 /* Media query for smaller screens */
 @media (max-width: 480px) {
