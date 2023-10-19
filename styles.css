@@ -35,6 +35,8 @@ h1 {
     margin: 20px;
     padding: 0;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .music-item {
