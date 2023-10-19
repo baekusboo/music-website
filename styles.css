@@ -43,8 +43,13 @@ h1 {
     border-radius: 15px;
     text-align: center;
     height: auto;
+    display: flex;
+    justify-content: space-between; 
+   
 }
-
+.des p {
+    margin: 0;
+}
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .music-grid {
