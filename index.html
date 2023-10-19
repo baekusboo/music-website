@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music World</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link
+			rel="icon"
+			href="https://img.icons8.com/3d-fluency/94/music.png"
+			type="image/png"
+		/>
+		<script src="theme.js" defer></script>
+		<script src="musicData.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="https://img.icons8.com/3d-fluency/94/music.png" type="image/png">
-    <script src="theme.js" defer></script>
-    <script src="musicData.js" defer></script>
-</head>
+	<body class="light-mode">
+		<header>
+			<div class="header-title">Music Website</div>
+			<div class="header-subtitle">Discover the World of Music</div>
+		</header>
 
-<body class="light-mode">
-    <header>
-        <h1>Music World</h1>
-    </header>
+		<div class="toggle-container">
+			<label class="toggle-label" for="darkModeToggle"
+				><i class="fas fa-moon"></i
+			></label>
+		</div>
 
-    <div class="toggle-container">
-        <label class="toggle-label" for="darkModeToggle"><i class="fas fa-moon"></i></label>
-    </div>
-
-    <div class="music-grid">
-        
-    </div>
-
-</body>
-
+		<div class="music-grid"></div>
+	</body>
 </html>
-
