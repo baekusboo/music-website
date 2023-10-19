@@ -66,7 +66,7 @@ async function renderMusicCards(data) {
       borderRadius: "12px",
       width: "100%",
       height: "352px",
-      color:"black",
+      color: "black",
     });
     Object.assign(iframe, {
       src: item.src,
@@ -82,10 +82,10 @@ async function renderMusicCards(data) {
 
     const p = document.createElement("p");
     p.textContent = "Suggested by " + item.suggestedBy;
-    p.style.marginTop="0px";
+    p.style.marginTop = "0px";
     p.style.marginBottom = "10px";
-    p.style.color="white";
-    p.style.padding="5px";
+    p.style.color = "white";
+    p.style.padding = "5px";
 
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
@@ -176,7 +176,7 @@ selectOptions.addEventListener("change", (e) => {
 
 // Event listener for the search input to filter the music cards
 search.addEventListener("input", (e) => {
-  const searchValue = e.target.value;
+  const searchValue = e.target.value.toLowerCase();
   const mediaContainer = document.querySelector(".music-grid");
   mediaContainer.innerHTML = "";
   fetchAndRender("all").then(() => {
@@ -184,7 +184,7 @@ search.addEventListener("input", (e) => {
     musicItems.forEach((item) => {
       const p = item.querySelector("p");
       const text = p.textContent;
-      if (text.includes(searchValue)) {
+      if (text.toLowerCase().includes(searchValue)) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
