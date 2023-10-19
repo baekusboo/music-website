@@ -27,6 +27,7 @@ async function renderMusicCards(data) {
       borderRadius: "12px",
       width: "100%",
       height: "352px",
+      
     });
     Object.assign(iframe, {
       src: item.src,
@@ -35,6 +36,7 @@ async function renderMusicCards(data) {
       allow:
         "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture",
       loading: "lazy",
+      
     });
 
     const p = document.createElement("p");
