@@ -50,6 +50,15 @@ h1 {
 .des p {
     margin: 0;
 }
+.des button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .music-grid {
