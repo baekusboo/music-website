@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* Light mode styles */
 /*.light-mode {
@@ -13,15 +14,15 @@ body {
 }
 
 /* Dark mode styles */
-/*.dark-mode {
-    background-color: #222;
-    color: #fff;
+.dark-mode {
+  background-color: #222;
+  color: #fff;
 }
 
 /* Header styles */
 header {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 /*h1 {
@@ -30,269 +31,318 @@ header {
     
 }*/
 :root {
-    --text-color-light: rgba(0, 0, 0, 1); /* Default text color for light mode */
-    --text-color-dark: rgba(255, 255, 255, 1); /* Default text color for dark mode */
+  --text-color-light: rgba(0, 0, 0, 1); /* Default text color for light mode */
+  --text-color-dark: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Default text color for dark mode */
 }
 
 body {
-    /* Set the default background color for both modes */
-    background-color: #fff;
-    color: var(--text-color-light); /* Set default text color for light mode */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* Set the default background color for both modes */
+  background-color: #fff;
+  color: var(--text-color-light); /* Set default text color for light mode */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 body.dark-mode {
-    /* Add styles for dark mode */
-    background-color: #333;
-    color: var(--text-color-dark);
+  /* Add styles for dark mode */
+  background-color: #111;
+  color: var(--text-color-dark);
 }
 
 h1 {
-    font-family: "Abril Fatface", sans-serif;
-    font-size: 5rem; /* Adjust the font size as needed */
-    width: 80vw;
-    margin: 5vh auto; /* Adjusted margin to 10vh */
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    background-image: linear-gradient(to right, crimson, pink, gold, orange, springgreen, blue); /* Added more colors */
-    background-size: 400% 100%; /* Adjusted background-size for more colors */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradient 40s linear infinite; /* Longer duration for smoother flow */
+  font-family: "bebas neue", sans-serif;
+  font-size: 6rem; /* Adjust the font size as needed */
+  width: 80vw;
+  margin: 5vh auto; /* Adjusted margin to 10vh */
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-image: linear-gradient(
+    to right,
+    crimson,
+    pink,
+    gold,
+    orange,
+    springgreen,
+    blue
+  ); /* Added more colors */
+  background-size: 400% 100%; /* Adjusted background-size for more colors */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 40s linear infinite; /* Longer duration for smoother flow */
 }
 
 h1:hover {
-    color: transparent;
+  color: transparent;
 }
 
 body.dark-mode h1 {
-    background-image: linear-gradient(to right, gold, orange, crimson, violet, indigo, blue); /* Added more colors */
+  background-image: linear-gradient(
+    to right,
+    gold,
+    orange,
+    crimson,
+    violet,
+    indigo,
+    blue
+  ); /* Added more colors */
 }
 
 @keyframes gradient {
-    0% {
-        background-position: -100% 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
-
 
 /* Music list styles */
 .music-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 80px;
-    margin:10px 90px;
-    padding: 0;
-    list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 80px;
+  margin: 10px 90px;
+  padding: 0;
+  list-style: none;
 }
 
 .music-item {
-    background-color: #282828;
-    padding: 0px;
-    border-radius: 15px;
-    text-align: center;
-    height: auto;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    box-shadow: 5px 5px 10px #b0b0b0;
-    width: 270px;
+  background-color: #282828;
+  padding: 0px;
+  border-radius: 15px;
+  text-align: center;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px #b0b0b0;
+  width: 270px;
 }
 
-.music-item-dark-mode{
-    color: black;
-    box-shadow: 5px 5px 10px black;
-    background-color: rgb(225, 225, 225);
+.music-item-dark-mode {
+  color: black;
+  box-shadow: 5px 5px 10px black;
+  background-color: #333;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 3rem; /* Adjust the font size as needed */
-    }
-    .music-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the width for smaller screens */
-        margin:40px;
-    }
+  h1 {
+    font-size: 3rem; /* Adjust the font size as needed */
+  }
+  .music-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* Adjust the width for smaller screens */
+    margin: 40px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
 }
-
 
 /* Styles for the toggle container */
 .toggle-container {
-    position: absolute;
-    top: 20px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  float: right;
+  width: 2%;
+  margin: 5px 5px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer !important;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateY(0px);
+  transition: all 0.3s;
+  font-size: 2rem;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+#backToTopBtn:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s;
 }
 
 /* Styles for the toggle label */
 .toggle-label {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%; /* Make it a circle */
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
 }
 
 /* Styles for the icon */
 .toggle-label i {
-    font-size: 24px; /* Adjust the icon size as needed */
+  font-size: 24px; /* Adjust the icon size as needed */
 }
 
-
 .details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 /* Like Button */
 .fav-btn {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @keyframes favme-anime {
-    0% {
-      opacity: 1;
-      font-size: 1rem;
-      -webkit-text-stroke-color: transparent;
-    }
-    25% {
-      opacity: 0.6;
-      color: #FFF;
-      font-size: 0.8rem;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #DC3232;
-    }
-    75% {
-      opacity: 0.6;
-      color: #FFF;
-      font-size: 1.42875rem;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #DC3232;
-    }
-    100% {
-      opacity: 1;
-      font-size: 1.25rem;
-      -webkit-text-stroke-color: transparent;
-    }
-  }
-  @keyframes favme-hover {
-    from {
-      font-size: 1.42875rem;
-    }
-    80% {
-      font-size: 1.25rem;
-    }
-  }
-  .favme {
-    display: block;
-    font-size: 3rem;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    box-shadow: none;
-    transition: all 0.2s ease;
-    color: #CBCDCE;
-    margin: 0;
-  }
-  .favme.active {
-    color: #DC3232;
-  }
-  .favme:hover {
-    animation: favme-hover 0.3s infinite alternate;
-  }
-  .favme.is_animating {
-    animation: favme-anime 0.3s;
-  }
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Filter */
-  .filter-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    padding: 0 3rem;
+@keyframes favme-anime {
+  0% {
+    opacity: 1;
+    font-size: 1rem;
+    -webkit-text-stroke-color: transparent;
+  }
+  25% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: 0.8rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dc3232;
+  }
+  75% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: 1.42875rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dc3232;
+  }
+  100% {
+    opacity: 1;
+    font-size: 1.25rem;
+    -webkit-text-stroke-color: transparent;
+  }
+}
+@keyframes favme-hover {
+  from {
+    font-size: 1.42875rem;
+  }
+  80% {
+    font-size: 1.25rem;
+  }
+}
+.favme {
+  display: block;
+  font-size: 3rem;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: #cbcdce;
+  margin: 0;
+}
+.favme.active {
+  color: #dc3232;
+}
+.favme:hover {
+  animation: favme-hover 0.3s infinite alternate;
+}
+.favme.is_animating {
+  animation: favme-anime 0.3s;
+}
+
+/* Filter */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 3rem;
 }
 .selectFilter {
-    width: 30%;
+  width: 30%;
 }
 .selectFilter select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
 }
 
 .searchFilter {
-    width: 65%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  width: 65%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 .searchFilter input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  margin-top: 50px !important;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 60px;
 }
-
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .footer-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 .footer-logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-
 .footer-logo h2 {
-    margin: 0;
-    padding-left: 10px;
-    font-size: 24px;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 24px;
 }
-
 .footer-social h3 {
-    margin: 0;
-    font-size: 18px;
+  margin: 0;
+  font-size: 18px;
 }
-
 .social-icons a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-    transition: color 0.3s; /* Add transition effect */
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  transition: color 0.3s; /* Add transition effect */
 }
 
 /* Add hover effect */
 .social-icons a:hover {
-    color: #ff9900; /* Change the color on hover (adjust to your preference) */
+  color: #ff9900; /* Change the color on hover (adjust to your preference) */
 }
 
 /* Social Media Icons */
 .fab {
-    font-size: 24px;
+  font-size: 24px;
 }

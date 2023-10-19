@@ -1,5 +1,6 @@
 const themeIcon = document.querySelector('.toggle-label i');
 const body = document.body;
+const arrow = document.querySelector("#backToTopBtn");
 
 let musicitem = document.getElementsByClassName('music-item');
 // console.log(musicitem);
@@ -14,4 +15,6 @@ themeIcon.addEventListener('click', () => {
     }
     themeIcon.classList.toggle('fa-sun', isDarkMode);
     themeIcon.classList.toggle('fa-moon', !isDarkMode);
+    arrow.classList.toggle("light-mode", !isDarkMode);
+    arrow.classList.toggle("dark-mode", isDarkMode);  
 });
