@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* Base styles */
 body {
@@ -13,9 +14,9 @@ body {
 }
 
 /* Dark mode styles */
-/*.dark-mode {
-    background-color: #222;
-    color: #fff;
+.dark-mode {
+  background-color: #222;
+  color: #fff;
 }
 
 /* Header styles */
@@ -48,13 +49,13 @@ body {
 
 body.dark-mode {
   /* Add styles for dark mode */
-  background-color: #333;
+  background-color: #111;
   color: var(--text-color-dark);
 }
 
 h1 {
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 5rem; /* Adjust the font size as needed */
+  font-family: "bebas neue", sans-serif;
+  font-size: 6rem; /* Adjust the font size as needed */
   width: 80vw;
   margin: 5vh auto; /* Adjusted margin to 10vh */
   display: block;
@@ -127,7 +128,7 @@ body.dark-mode h1 {
 .music-item-dark-mode {
   color: black;
   box-shadow: 5px 5px 10px black;
-  background-color: rgb(225, 225, 225);
+  background-color: #333;
 }
 
 /* Media query for smaller screens */
@@ -142,14 +143,26 @@ body.dark-mode h1 {
     ); /* Adjust the width for smaller screens */
     margin: 40px;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
 /* Styles for the toggle container */
 .toggle-container {
-  position: absolute;
-  top: 20px; /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  float: right;
+  width: 2%;
+  margin: 5px 5px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer !important;
 }
 
 #backToTopBtn {
@@ -158,7 +171,6 @@ body.dark-mode h1 {
   bottom: 20px;
   right: 20px;
   background: transparent;
-  color: #333;
   border: none;
   cursor: pointer;
   transform: translateY(0px);
@@ -178,6 +190,7 @@ body.dark-mode h1 {
   display: inline-block;
   padding: 10px;
   border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
 }
 
 /* Styles for the icon */
@@ -289,39 +302,34 @@ body.dark-mode h1 {
   font-size: 16px;
 }
 footer {
+  margin-top: 50px !important;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 20px 60px;
 }
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer-logo {
   display: flex;
   align-items: center;
 }
-
 .footer-logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 .footer-logo h2 {
   margin: 0;
   padding-left: 10px;
   font-size: 24px;
 }
-
 .footer-social h3 {
   margin: 0;
   font-size: 18px;
 }
-
 .social-icons a {
   text-decoration: none;
   color: #fff;
