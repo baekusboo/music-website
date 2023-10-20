@@ -84,10 +84,10 @@ body.dark-mode h1 {
 
 /* Music list styles */
 .music-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 80px;
-    margin:10px 90px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin:10px 50px;
     padding: 0;
     list-style: none;
 }
