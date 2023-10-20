@@ -34,13 +34,25 @@
                 <option value="favourites">Favourites</option>
             </select>
         </div>
-        <div class="searchFilter" id="searchFilter">
-            <!-- <label for="search"><i class="fas fa-search"></i></label> -->
+      <!-- <div class="searchFilter" id="searchFilter">
+            <label for="search"><i class="fas fa-search"></i></label> 
             <div class="search-icon"><i class="fas fa-search"></i></div>
             <input type="text" placeholder="Username" id="search">
         </div>
     </div>
-
+-->
+<div id="search-name"> 
+  
+        <form class="music" style="margin:auto;max-width:500px;" >
+  
+          <input type="text" placeholder="Username" id="search">
+          <button  class="search-icon" id="submit-btn"
+          onClick><i class="fa fa-search"></i> </button>
+      
+  
+</form>
+</div>
+</div>
     <div class="music-grid">
         
     </div>
@@ -62,6 +74,16 @@
             </div>
         </div>
     </footer>
+    <script> 
+        const form = document.querySelector("form"); 
+  
+       
+        document 
+            .getElementById("submit-btn") 
+            .addEventListener("click", function (event) { 
+                event.preventDefault(); 
+            }); 
+    </script>
 </body>
 
 </html>

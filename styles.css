@@ -5,7 +5,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+}* {
+    box-sizing: border-box;
+  }
 /* Light mode styles */
 /*.light-mode {
     background-color: #fff;
@@ -218,8 +220,8 @@ body.dark-mode h1 {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-    padding: 0 3rem;
-}
+    padding: 0 3rem;}
+
 .selectFilter {
     width: 30%;
 }
@@ -231,7 +233,7 @@ body.dark-mode h1 {
     outline: none;
     font-size: 16px;
 }
-
+/*
 .searchFilter {
     width: 65%;
     display: flex;
@@ -244,7 +246,41 @@ body.dark-mode h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    font-size: 16px;
+    font-size: 16px;}
+ */
+
+form.music input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+form.music button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  font-size: 17px;
+  border: 1px solid #ccc ;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.music button:hover {
+  background: #0b7dda;
+}
+
+form.music::after {
+  content: "";
+  clear: both;
+  display: table;
+
 }
 footer {
     background-color: #333;
