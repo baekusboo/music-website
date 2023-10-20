@@ -127,20 +127,36 @@ async function fetchAndRender(filter) {
       throw new Error("Network response was not ok");
     }
     const data = await response.json();
+     // Function to remove duplicates based on the 'id' property
+     const removeDuplicates = (arr) => {
+      const uniqueIds = new Set();
+      return arr.filter((item) => {
+        if (!uniqueIds.has(item.id)) {
+          uniqueIds.add(item.id);
+          return true;
+        }
+        return false;
+      });
+    };
     if (filter) {
       switch (filter) {
         case "favourites":
           const likedMusic = JSON.parse(localStorage.getItem("likedMusic"));
-          const filteredData = data.filter((item) => {
-            return likedMusic.includes(item.id);
-          });
+          const filteredData = removeDuplicates(
+            data.filter((item) => {
+              return likedMusic.includes(item.id);
+            })
+          );
           await renderMusicCards(filteredData);
           return;
         case "all":
-          await renderMusicCards(data);
+          const allData = removeDuplicates(data);
+          await renderMusicCards(allData);
           return;
         case "latest":
-          const latestData = data.sort((a, b) => b.id - a.id);
+          const latestData = removeDuplicates(
+            data.sort((a, b) => b.id - a.id)
+          );
           await renderMusicCards(latestData);
           return;
         default:
