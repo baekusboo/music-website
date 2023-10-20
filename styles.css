@@ -85,7 +85,8 @@ body.dark-mode h1 {
 /* Music list styles */
 .music-grid {
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
     margin:10px 50px;
     padding: 0;
