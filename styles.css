@@ -297,3 +297,17 @@ footer {
 .fab {
     font-size: 24px;
 }
+.search-icon i {
+    position: absolute;
+    margin: 13px;
+}
+ 
+.search-icon {
+    width: 100%;
+  
+}
+ .input-field {
+    width: 50%;
+  
+    text-align: center;
+}
