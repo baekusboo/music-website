@@ -85,6 +85,7 @@ body.dark-mode h1 {
 /* Music list styles */
 .music-grid {
     display: flex;
+    justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
     margin:10px 50px;
@@ -94,14 +95,15 @@ body.dark-mode h1 {
 
 .music-item {
     background-color: #282828;
-    padding: 0px;
+    padding: 10px;
     border-radius: 15px;
     text-align: center;
     height: auto;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     box-shadow: 5px 5px 10px #b0b0b0;
-    width: 270px;
+    width: 300px;
+    margin:10px;
 }
 
 .music-item-dark-mode{
