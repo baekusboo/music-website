@@ -127,6 +127,18 @@ async function fetchAndRender(filter) {
       throw new Error("Network response was not ok");
     }
     const data = await response.json();
+    // Function to remove duplicates based on the 'id' property
+    const removeDuplicates = (arr) => {
+      const uniqueIds = new Set();
+      return arr.filter((item) => {
+        if (!uniqueIds.has(item.id)) {
+          uniqueIds.add(item.id);
+          return true;
+        }
+        return false;
+      });
+    };
+
     if (filter) {
       switch (filter) {
         case "favourites":
