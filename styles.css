@@ -36,15 +36,15 @@ header {
 
 body {
     /* Set the default background color for both modes */
-    background-color: #fff;
-    color: var(--text-color-light); /* Set default text color for light mode */
+    background-color: #000000;
+    color: var(--text-color-dark); /* Set default text color for light mode */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 body.dark-mode {
     /* Add styles for dark mode */
-    background-color: #333;
-    color: var(--text-color-dark);
+    background-color: #ffffff;
+    color: var(--text-color-light);
 }
 
 h1 {
@@ -56,7 +56,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    background-image: linear-gradient(to right, crimson, pink, gold, orange, springgreen, blue); /* Added more colors */
+    background-image: linear-gradient(90deg, rgba(191,219,255,1) 0%, rgba(141,192,223,1) 5%, rgba(55,146,168,1) 27%, rgba(107,49,169,1) 63%, rgba(222,147,175,1) 87%, rgba(205,96,96,1) 93%, rgba(252,176,69,1) 100%); /* Added more colors */
     background-size: 400% 100%; /* Adjusted background-size for more colors */
     background-clip: text;
     -webkit-background-clip: text;
@@ -69,7 +69,7 @@ h1:hover {
 }
 
 body.dark-mode h1 {
-    background-image: linear-gradient(to right, gold, orange, crimson, violet, indigo, blue); /* Added more colors */
+    background-image: linear-gradient(90deg, rgba(191,219,255,1) 0%, rgba(141,192,223,1) 5%, rgba(55,146,168,1) 27%, rgba(107,49,169,1) 63%, rgba(222,147,175,1) 87%, rgba(205,96,96,1) 93%, rgba(252,176,69,1) 100%); /* Added more colors */
 }
 
 @keyframes gradient {
@@ -93,7 +93,7 @@ body.dark-mode h1 {
 }
 
 .music-item {
-    background-color: #282828;
+    background-color: #527cd0c8;
     padding: 0px;
     border-radius: 15px;
     text-align: center;
@@ -107,7 +107,7 @@ body.dark-mode h1 {
 .music-item-dark-mode{
     color: black;
     box-shadow: 5px 5px 10px black;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(45, 134, 178);
 }
 
 /* Media query for smaller screens */
