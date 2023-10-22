@@ -161,11 +161,17 @@ body.dark-mode h1 {
 }
 
 /* Styles for the toggle container */
+/* Styles for the toggle container */
 .toggle-container {
-  position: absolute;
-  top: 20px; /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  float: right;
+  width: 2%;
+  margin: 5px 5px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer !important;
 }
 
 #backToTopBtn {
@@ -193,6 +199,7 @@ body.dark-mode h1 {
   display: inline-block;
   padding: 10px;
   border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
 }
 
 /* Styles for the icon */
@@ -306,7 +313,7 @@ body.dark-mode h1 {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 20px 60px;
 }
 
 .footer-content {
