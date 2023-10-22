@@ -23,7 +23,20 @@ header {
   padding: 20px;
   text-align: center;
 }
+.header-subtitle {
+    font-size: 24px;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s forwards 1s;
+    color:rgb(58, 9, 80);
+}
 
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /*h1 {
     font-size: 36px;
     margin: 0;
@@ -51,7 +64,9 @@ body.dark-mode {
   background-color: #333;
   color: var(--text-color-dark);
 }
-
+body.dark-mode .header-subtitle{
+    color: orange;
+}
 h1 {
   font-family: "Abril Fatface", sans-serif;
   font-size: 5rem; /* Adjust the font size as needed */
