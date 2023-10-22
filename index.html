@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://img.icons8.com/3d-fluency/94/music.png" type="image/png">
-    <link href="//s.w.org/wp-includes/css/dashicons.css?20150710" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/3d-fluency/94/music.png"
+      type="image/png"
+    />
+    <link
+      href="//s.w.org/wp-includes/css/dashicons.css?20150710"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="theme.js" defer></script>
     <script src="musicData.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body class="light-mode">
+  <body class="light-mode">
     <header>
-        <h1>Music World</h1>
-        <div class="header-subtitle">Discover the World of Music</div>
+      <h1>Music World</h1>
+      <div class="header-subtitle">Discover the World of Music</div>
     </header>
 
     <div class="toggle-container">
-        <label class="toggle-label" for="darkModeToggle"><i class="fas fa-moon"></i></label>
+      <label class="toggle-label" for="darkModeToggle"
+        ><i class="fas fa-moon"></i
+      ></label>
     </div>
+
+    <button
+      id="backToTopBtn"
+      onclick="scrollToTop()"
+      style="display: block"
+      class="light-mode"
+    >
+      ↑
+    </button>
 
     <div class="filter-container">
-        <div class="selectFilter">
-            <select name="filter" id="filter">
-                <option selected value="all">All</option>
-                <option value="latest">Latest</option>
-                <option value="favourites">Favourites</option>
-            </select>
-        </div>
-        <div class="searchFilter" id="searchFilter">
-            <!-- <label for="search"><i class="fas fa-search"></i></label> -->
-            <div class="search-icon"><i class="fas fa-search"></i></div>
-            <input type="text" placeholder="Username" id="search">
-        </div>
+      <div class="selectFilter">
+        <select name="filter" id="filter">
+          <option selected value="all">All</option>
+          <option value="latest">Latest</option>
+          <option value="favourites">Favourites</option>
+        </select>
+      </div>
+      <div class="searchFilter" id="searchFilter">
+        <!-- <label for="search"><i class="fas fa-search"></i></label> -->
+        <div class="search-icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Username" id="search" />
+      </div>
     </div>
 
-    <div class="music-grid">
-        
-    </div>
+    <div class="music-grid"></div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-            <!--Add Your logo here !-->
-                <img src="https://example.com/your-logo.png" alt="Music World Logo">
-                <h2>Music World</h2>
-            </div>
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <!--Add Your logo here !-->
+          <img src="https://example.com/your-logo.png" alt="Music World Logo" />
+          <h2>Music World</h2>
         </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
 
+    <script>
+      let backToTopButton = document.getElementById("backToTopBtn");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 20) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
 </html>
-
