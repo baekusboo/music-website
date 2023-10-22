@@ -51,12 +51,14 @@ async function renderMusicCards(data) {
   }
 
   const musicContainer = document.querySelector(".music-grid");
-
+  const seenCards = new Set();
   for (let item of data) {
+    if (!seenCards.has(item.id)) {
     item.src = await modifyUrl(item.src);
 
     const musicItem = document.createElement("div");
     musicItem.className = "music-item";
+    musicItem.setAttribute("data-aos", "fade-up");
 
     const des = document.createElement("div");
     des.className = "des";
@@ -116,6 +118,7 @@ async function renderMusicCards(data) {
     des.appendChild(details);
     musicItem.appendChild(des);
     musicContainer.appendChild(musicItem);
+    seenCards.add(item.id);}
   }
 }
 
