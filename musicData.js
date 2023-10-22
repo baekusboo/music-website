@@ -58,6 +58,7 @@ async function renderMusicCards(data) {
 
     const musicItem = document.createElement("div");
     musicItem.className = "music-item";
+    musicItem.setAttribute("data-aos", "fade-up");
 
     const des = document.createElement("div");
     des.className = "des";
