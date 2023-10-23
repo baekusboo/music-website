@@ -391,9 +391,11 @@ footer {
   .social-icons {
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
+     /* flex-wrap: wrap; */
   }
-
+  .music_img img {
+    width:150px;
+  }
   .scroll_up {
     width: 40px;
     position: absolute;
@@ -408,5 +410,16 @@ footer {
     position: absolute;
     right:3px;
     bottom:10px;
+  }
+  .fab {
+    font-size: 20px;
+    
+  }
+  .music_img img {
+    width:150px;
+  }
+  .social-icons a {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
