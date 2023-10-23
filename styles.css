@@ -190,6 +190,9 @@ body.dark-mode h1 {
 }
 .scroll_up {
   width: 50px;
+  position: absolute;
+  right:5px;
+  bottom:10px;
 }
 #backToTopBtn:hover {
   transform: translateY(-5px);
@@ -320,7 +323,7 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -329,6 +332,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width:650px;
+  margin:0;
 }
 .footer-logo h2 {
   font-family: cursive;
@@ -347,7 +352,7 @@ footer {
   font-size: 24px;
 }
 .music_img img {
-  width: 200px;
+  width:200px;
 }
 .footer-social {
   display: flex;
@@ -367,8 +372,8 @@ footer {
 .social-icons a {
   text-decoration: none;
   color: #fff;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   transition: color 0.3s; /* Add transition effect */
 }
 
@@ -379,5 +384,29 @@ footer {
 
 /* Social Media Icons */
 .fab {
-  font-size: 24px;
+  font-size: 30px;
+}
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  .social-icons {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+  }
+
+  .scroll_up {
+    width: 40px;
+    position: absolute;
+    right:2.5px;
+    bottom:10px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .scroll_up {
+    width: 50px;
+    position: absolute;
+    right:3px;
+    bottom:10px;
+  }
 }
