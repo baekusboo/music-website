@@ -191,8 +191,8 @@ body.dark-mode h1 {
 .scroll_up {
   width: 50px;
   position: absolute;
-  right:5px;
-  bottom:10px;
+  bottom: 10px;
+  right: 1px;
 }
 #backToTopBtn:hover {
   transform: translateY(-5px);
@@ -332,8 +332,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:650px;
-  margin:0;
+  width: 650px;
+  margin: 0;
 }
 .footer-logo h2 {
   font-family: cursive;
@@ -352,7 +352,7 @@ footer {
   font-size: 24px;
 }
 .music_img img {
-  width:200px;
+  width: 200px;
 }
 .footer-social {
   display: flex;
@@ -366,7 +366,7 @@ footer {
   font-size: 30px;
   font-family: cursive;
 }
-.footer_dark{
+.footer_dark {
   background-color: #fff;
 }
 .social-icons a {
@@ -389,18 +389,19 @@ footer {
 /* Responsive */
 @media only screen and (max-width: 800px) {
   .social-icons {
-     display: flex;
-     flex-direction: column;
-     /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
   }
   .music_img img {
-    width:150px;
+    width: 150px;
   }
   .scroll_up {
     width: 40px;
     position: absolute;
-    right:2.5px;
-    bottom:10px;
+    right: 2.5px;
+    bottom: 10px;
+    left: 0%;
   }
 }
 
@@ -408,21 +409,29 @@ footer {
   .scroll_up {
     width: 40px;
     position: absolute;
-    bottom:5px;
-    left:0%;
+    bottom: 5px;
+    left: 0%;
   }
-  .btn{
-    margin-left:10px;
+  .btn {
+    margin-left: 10px;
   }
   .fab {
     font-size: 20px;
-    
   }
   .music_img img {
-    width:150px;
+    width: 150px;
   }
   .social-icons a {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1100px) {
+  .scroll_up {
+    width: 45px;
+    position: absolute;
+    bottom: 5px;
+    left: 0%;
   }
 }
