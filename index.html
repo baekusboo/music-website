@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,13 +52,14 @@
       ></label>
     </div>
 
-    <button class="btn"
+    <button
+      class="btn"
       id="backToTopBtn"
       onclick="scrollToTop()"
       style="display: block"
       class="light-mode"
     >
-      <img class="scroll_up"src="scroll.svg" alt="Scroll up">
+      <img class="scroll_up" src="scroll.svg" alt="Scroll up" />
     </button>
 
     <div class="filter-container">
@@ -66,9 +71,12 @@
         </select>
       </div>
       <div class="searchFilter" id="searchFilter">
-        <!-- <label for="search"><i class="fas fa-search"></i></label> -->
-        <div class="search-icon"><i class="fas fa-search"></i></div>
-        <input type="text" placeholder="Username" id="search" />
+        <input
+          type="text"
+          placeholder="&#xF002; Username"
+          style="font-family: Arial, FontAwesome"
+          id="search"
+        />
       </div>
     </div>
 
@@ -77,11 +85,15 @@
       <div class="footer-content">
         <div class="footer-logo">
           <!--Add Your logo here !-->
-          <img src="https://img.icons8.com/3d-fluency/94/music.png" alt="Music World Logo" />
-          <h2 id="footer_text">“The perfect song on the perfect drive to 
-            make you feel infinite.”</h2>
+          <img
+            src="https://img.icons8.com/3d-fluency/94/music.png"
+            alt="Music World Logo"
+          />
+          <h2 id="footer_text">
+            “The perfect song on the perfect drive to make you feel infinite.”
+          </h2>
         </div>
-        <div class="music_img"><img src="music.png" alt="img"></div>
+        <div class="music_img"><img src="music.png" alt="img" /></div>
         <div class="footer-social">
           <h3>Follow Us</h3>
           <div class="social-icons">
