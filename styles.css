@@ -212,6 +212,7 @@ body.dark-mode h1 {
   font-size: 24px; /* Adjust the icon size as needed */
 }
 
+/* updates */
 .details {
   display: flex;
   align-items: flex-end;
@@ -225,12 +226,13 @@ body.dark-mode h1 {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: 20%;  /*changes done here */
+  width: 20%;  
   font-size: 3rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
+/* updated */
 
 @keyframes favme-anime {
   0% {
