@@ -225,7 +225,7 @@ body.dark-mode h1 {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: 20%;
+  width: 20%;  /*changes done here */
   font-size: 3rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
