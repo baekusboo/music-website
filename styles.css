@@ -211,21 +211,28 @@ body.dark-mode h1 {
 .toggle-label i {
   font-size: 24px; /* Adjust the icon size as needed */
 }
-
+i
+/* updates */
 .details {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 /* Like Button */
 .fav-btn {
   display: flex;
-  height: 100%;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 20%;  
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-
+/* updates */
 @keyframes favme-anime {
   0% {
     opacity: 1;
