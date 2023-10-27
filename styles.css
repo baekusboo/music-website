@@ -211,7 +211,7 @@ body.dark-mode h1 {
 .toggle-label i {
   font-size: 24px; /* Adjust the icon size as needed */
 }
-
+i
 /* updates */
 .details {
   display: flex;
@@ -232,8 +232,7 @@ body.dark-mode h1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-/* updated */
-
+/* updates */
 @keyframes favme-anime {
   0% {
     opacity: 1;
