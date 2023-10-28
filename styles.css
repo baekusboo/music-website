@@ -215,7 +215,7 @@ body.dark-mode h1 {
 
   /* Filter */
   .filter-container {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
@@ -236,11 +236,11 @@ body.dark-mode h1 {
 .searchFilter {
     width: 65%;
     display: flex;
-    gap: 10px;
+    gap: 1px;
     align-items: center;
 }
 .searchFilter input {
-    width: 100%;
+    width: 757px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -299,7 +299,7 @@ footer {
 }
 .search-icon i {
     position: absolute;
-    margin: 13px;
+    /* margin: 13px; */
 }
  
 .search-icon {
@@ -307,7 +307,7 @@ footer {
   
 }
  .input-field {
-    width: 50%;
+    /* width: ; */
   
     text-align: center;
 }
